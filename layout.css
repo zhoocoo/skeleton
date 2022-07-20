@@ -1,0 +1,25 @@
+.ske {
+  width: 200px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+
+.ske .ske-img {
+  height: 160px;
+}
+
+.ske .ske-info {
+  padding: 12px;
+}
+
+.ske .ske-info .ske-info-title {
+  height: var(--ske-row-height);
+  animation-delay: 45ms;
+}
+
+.ske .ske-info .ske-info-desc {
+  height: calc(var(--ske-row-height) * 2);
+  margin-top: 10px;
+  animation-delay: 55ms;
+}
