@@ -4,18 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./common.css" />
+    <title>skeleton</title>
+    <style>
+      html,
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+      #app {
+        min-height: 100vh;
+        background: #f5f5f5;
+        padding-top: 100px;
+      }
+
+      .ske {
+        width: 200px;
+        background-color: white;
+        border-radius: 6px;
+        margin: 0 auto;
+      }
+
+      .ske .ske-img {
+        height: 160px;
+      }
+
+      .ske .ske-info {
+        padding: 12px;
+      }
+
+      .ske .ske-info .ske-info-title {
+        height: 20px;
+        animation-delay: 45ms;
+      }
+
+      .ske .ske-info .ske-info-desc {
+        height: 40px;
+        margin-top: 10px;
+        animation-delay: 55ms;
+      }
+    </style>
     <link rel="stylesheet" href="./skeleton.css" />
-    <link rel="stylesheet" href="./layout.css" />
   </head>
   <body>
     <div id="app">
       <div class="ske">
-        <div class="ske-img __ske_cls __ske_loading __ske_logo"></div>
+        <div class="ske-img __ske __ske_loading __ske_logo"></div>
         <div class="ske-info">
-          <div class="ske-info-title __ske_cls __ske_loading"></div>
-          <div class="ske-info-desc __ske_cls __ske_loading"></div>
+          <div class="ske-info-title __ske __ske_loading"></div>
+          <div class="ske-info-desc __ske __ske_loading"></div>
         </div>
       </div>
     </div>
