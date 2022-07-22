@@ -1,10 +1,11 @@
+/* skeleton.css */
 :root {
   --ske-back-color: #edeeef;
   --ske-logo: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAACQCAMAAAA/Wnm0AAAAclBMVEUAAADOzs7Ly8vLy8vNzc3Nzc3Nzc3Nzc3Ozs7Ozs7Nzc3Ozs7Ozs7Nzc3Nzc3Nzc3Nzc3Ozs7Nzc3Ozs7Ly8vNzc3Nzc3MzMzNzc3Ozs7Pz8/T09PNzc3GxsbNzc3Ozs7Nzc3Ozs7Dw8PNzc3Nzc3Nzc0RvztGAAAAJXRSTlMAv0CA5vuyqWge4NCtjFb1zXhbOCvHtlBHQxcPDQnu1Z+WEXBgGoQieAAAAbRJREFUeNrt2FlugzAUheEDDoEMJEDIPLf1/rfYvgXXVBRfJ7jV+Rdw9Fnyg2Ww/1P8yvCbIv26KKKIotYo+huiyHdikYLnKKKIIooooogiiiiiiCKKKLJFdXCiyfCikyk6Dy/aG6AlhheVhmgagGhuiIrhRSttlA4vSk3RYnDRQpsdhxZl2izFsKKV0t/KnESxj7Yf7+qqrSZAWD+jCoGJNghMtERoojow0fiMoERJBYQkWs5rBCQq8u0RPYue0viWl9lifwRjjDHGGGPPKHIvhpUSzHl46reJtHsUUUQRRSGLVNxZH1HcXacIXfUSoTOKKKKIIooooogiiiiiiCKKKKKIIooooogiihxElV9RJReVulEtFpVy0V03OohFd7lorB8lkIjsOReReRNHIpE95yQa60YzkciecxHFulkqEtlz/UUHNTImFiKRPddTNFl9DZi9CUTtc7Yo+qH1NNFWc7SK5HORdixrFwnmhKLZSSSy58SiHbyKdpCKFLyKFKSiDbyKNhCKkj28irYQivIzfIrSCUSiIt8B/kSjWwU4iZLLaDpbzzPjPALR8jK9FlEe49EnhCEDxcCbebMAAAAASUVORK5CYII=");
 }
 
-._ske._ske_loading ._ske_color,
-._ske._ske_loading ._ske_tag {
+._ske_loading ._ske_color,
+._ske_loading ._ske_tag {
   background: linear-gradient(
       100deg,
       rgba(255, 255, 255, 0) 40%,
@@ -12,23 +13,22 @@
       rgba(255, 255, 255, 0) 60%
     )
     var(--ske-back-color);
-  /* var(--ske-back-color); */
   background-size: 200% 100%;
   background-position: 100% 50%;
   background-position-x: 180%;
   animation: 1s _ske_loading ease-in-out infinite;
 }
 
-._ske ._ske_color,
-._ske._ske_color {
+
+._ske_color {
   background-color: var(--ske-back-color);
 }
 
-._ske ._ske_logo {
+._ske_logo {
   position: relative;
 }
 
-._ske ._ske_logo::after {
+._ske_logo::after {
   content: "";
   width: 30px;
   height: 30px;
@@ -38,11 +38,7 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  z-index: 1;
-  background-image: var(--ske-logo);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: var(--ske-logo) center/100% no-repeat;
 }
 
 @keyframes _ske_loading {
